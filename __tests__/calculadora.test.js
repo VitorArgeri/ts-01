@@ -30,7 +30,7 @@ describe("Calculadora", () => {
             expect(resultado).toBe(1)
         }),
         test("Deve lançar erro ao dividir por 0", () => {
-            expect(() => {dividir(10, 0)}).toThrow("Não foi possível fazer a divisão")
+            expect(() => {dividir(10, 0)}).toThrow("Não é possível dividir por zero")
         }),
         test("Deve verificar se o número é par", () => {
             const a = 2
