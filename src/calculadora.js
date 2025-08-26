@@ -15,9 +15,14 @@ export function multiplicar(a, b) {
 
 // Função simples para testar divisão
 export function dividir(a, b) {
-    return a / b
+    if(b == 0) {
+        throw new Error("Não é possível dividir por zero")
+    } else {
+        return a / b
+    }
 }
 
+// Função simples para verificar se o número é par
 export function ehPar(a) {
     if(a % 2 == 0) {
         return "É par"
